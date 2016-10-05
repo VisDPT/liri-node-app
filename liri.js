@@ -18,8 +18,8 @@ var movieName = "";
 
 
 function omdbiRequest(){
-	for (var i=2; i<nodeArgs.length; i++){
-		if (i>2 && i< nodeArgs.length){
+	for (var i=3; i<nodeArgs.length; i++){
+		if (i>3 && i< nodeArgs.length){
 			movieName = movieName + "+" + nodeArgs[i]; 
 		}
 		else {
@@ -50,4 +50,15 @@ function omdbiRequest(){
 	});
 }
 
-omdbiRequest();
+
+
+if (process.argv [2] == "my-tweets"){
+	console.log("twitter API");
+	 
+} else if (process.argv [2] == "spotify-this-song"){
+	 console.log("spotify API");
+} else if (process.argv [2] == "movie-this"){
+	 omdbiRequest()
+} else if (process.argv [2] == "do-what-it-says"){
+	console.log("do what it says");
+}
