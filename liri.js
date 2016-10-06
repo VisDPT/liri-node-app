@@ -18,17 +18,24 @@ var keys =  new Twitter (twitterFile.twitterKeys);
  // })
 
 
-var params = {screen_name: 'VisDPT'};
+var params = {screen_name: 'VisDPT',
+            count:20,
+            trim_user: 1,
+            contributer_details: true
+        };
+
 
 function twitterFeed(){
   keys.get('statuses/user_timeline', params, function(error, tweets) {
-    for(var i=0; i<20; i++){
+    //for(var i=0; i<20; i++){
+        
     if (!error) {
+        var results = tweets.data
        console.log(tweets);
     } else{
         console.log(error);
     }
-    }
+    //}
   });
    
 }
