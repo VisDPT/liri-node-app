@@ -1,13 +1,39 @@
-//grabs the keys from keys.js
-var twitterKeyFile = require('./keys.js');
-var twitterKeyInfo = twitterKeyFile.twitterKeys;
+
 
 // Include the request npm package (Don't forget to run "npm install request" in this folder first!)
 
 
-//TWITTER API from Inquirer
+//=============================TWITTER API from inquirer===============================================
+//grabs the keys from keys.js
+var Twitter = require('twitter');
+var twitterFile = require('./keys.js');
+var keys =  new Twitter (twitterFile.twitterKeys); 
 
+
+//var client =  new Twitter ({keys});
+ //     consumer_key: keys.consumer_key,
+ //     consumer_secret: keys.consumer_secret,
+ //     access_token_key: keys.access_token_key,
+ //     access_token_secret: keys.access_token_secret,
+ // })
+
+
+var params = {screen_name: 'VisDPT'};
+
+function twitterFeed(){
+  keys.get('statuses/user_timeline', params, function(error, tweets, response) {
+    if (!error) {
+       console.log(tweets);
+    } else{
+        console.log(error);
+    }
+  });
+}
+//twitterFeed();
 //====================SPOTIFY API from INQUIRER
+//var SpotifyWebApi = require('spotify-web-api-node');
+
+
 
 //=============================REQUEST OMDB API ===============================================
 // Then run a request to the OMDB API with the movie specified
@@ -57,6 +83,7 @@ var mrNobodyMessage = "If you haven't watched 'Mr. Nobody', then you should: " +
 // ==========TWEET COMMAND =========
 if (process.argv[2] == "my-tweets") {
     console.log("twitter API");
+    twitterFeed();
 
     // ==========SPOTIFY COMMAND =========
 } else if (process.argv[2] == "spotify-this-song") {
