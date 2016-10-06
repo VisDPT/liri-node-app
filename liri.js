@@ -21,13 +21,16 @@ var keys =  new Twitter (twitterFile.twitterKeys);
 var params = {screen_name: 'VisDPT'};
 
 function twitterFeed(){
-  keys.get('statuses/user_timeline', params, function(error, tweets, response) {
+  keys.get('statuses/user_timeline', params, function(error, tweets) {
+    for(var i=0; i<20; i++){
     if (!error) {
        console.log(tweets);
     } else{
         console.log(error);
     }
+    }
   });
+   
 }
 //twitterFeed();
 //====================SPOTIFY API from INQUIRER
