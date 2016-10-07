@@ -40,19 +40,36 @@ function spotifySong(){
         }
     }
     
-spotifyApi.searchTracks('name: ' + songName)
-  .then(function(data) {
-    console.log("\n" +"ARTIST:" + data.body.tracks.items[0].artists[0].name +";"+
-         "\n" +"SONG NAME:" + data.body.tracks.items[0].name +";"+
-         "\n" +"LINK:" + data.body.tracks.items[0].href +";"+
-         "\n" +"Album Name:" + data.body.tracks.items[0].album.name + ";");
+    spotifyApi.searchTracks('name: ' + songName)
+      .then(function(data) {
+        console.log("\n" +"ARTIST:" + data.body.tracks.items[0].artists[0].name +";"+
+             "\n" +"SONG NAME:" + data.body.tracks.items[0].name +";"+
+             "\n" +"LINK:" + data.body.tracks.items[0].href +";"+
+             "\n" +"Album Name:" + data.body.tracks.items[0].album.name + ";");
 
-  }, function(err) {
-    console.error(err);
-  });
+      }, function(err) {
+        console.error(err);
+      });
 }
 
-//data.body.tracks.items.  
+//data.body.tracks.items. 
+
+function spotifyNoSong(){
+
+    spotifyApi.searchTracks("artist:" + "Ace of Base")
+      .then(function(data) {
+        console.log("\n" +"ARTIST:" + data.body.tracks.items[1].artists[0].name +";"+
+             "\n" +"SONG NAME:" + data.body.tracks.items[1].name +";"+
+             "\n" +"LINK:" + data.body.tracks.items[1].external_urls.spotify +";"+
+             "\n" +"Album Name:" + data.body.tracks.items[1].album.name + ";");
+
+      },function(err) {
+        console.error(err);
+      });
+
+}
+
+
 
 //=============================REQUEST OMDB API ===============================================
 var request = require('request');
@@ -106,8 +123,11 @@ if (process.argv[2] == "my-tweets") {
 
     // ==========SPOTIFY COMMAND =========
 } else if (process.argv[2] == "spotify-this-song") {
-    console.log("spotify API");
-    spotifySong();
+    if (process.argv[3] == null) {
+        spotifyNoSong();
+    } else {
+        spotifySong();
+    }
 
     // ==========OMDB COMMAND =========
 } else if (process.argv[2] == "movie-this") {
