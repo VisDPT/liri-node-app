@@ -16,8 +16,9 @@ var params = {
 function twitterFeed() {
     keys.get('statuses/user_timeline', params, function(error, tweets) {
         if (!error) {
-            var results = tweets.data
-            console.log(tweets);
+            for (var i=0; i<20; i++){
+            console.log('Tweet: ' + '"' + tweets[i].text + '"          ' + tweets[0].created_at);
+            }
         } else {
             console.log(error);
         }
@@ -31,7 +32,7 @@ var spotifyArgs = process.argv;
 var songName = "";
 
 
-function spotifySong(){
+function spotifySong() {
     for (var i = 3; i < spotifyArgs.length; i++) {
         if (i > 3 && i < spotifyArgs.length) {
             songName = songName + "+" + spotifyArgs[i];
@@ -39,46 +40,46 @@ function spotifySong(){
             songName = songName + spotifyArgs[i];
         }
     }
-    
-    spotifyApi.searchTracks('track:' + songName)
-      .then(function(data) {
-        console.log("Search Results for:  " + songName + "\n")
-        console.log("\n==========================================" +
-            "\n" +"SONG NAME:" + data.body.tracks.items[0].name +";"+
-            "\n" +"ARTIST:" + data.body.tracks.items[0].artists[0].name +";"+  
-             "\n" +"LINK:" + data.body.tracks.items[0].href +";"+
-             "\n" +"Album Name:" + data.body.tracks.items[0].album.name + ";"+
-             "\n==========================================");
-        console.log("SONG NAME:" + data.body.tracks.items[1].name +";"+
-            "\n" +"ARTIST:" + data.body.tracks.items[1].artists[0].name +";"+
-             "\n" +"LINK:" + data.body.tracks.items[1].href +";"+
-             "\n" +"Album Name:" + data.body.tracks.items[1].album.name + ";"+
-             "\n==========================================");
-        console.log("SONG NAME:" + data.body.tracks.items[2].name +";"+
-            "\n" +"ARTIST:" + data.body.tracks.items[2].artists[0].name +";"+ 
-             "\n" +"LINK:" + data.body.tracks.items[2].href +";"+
-             "\n" +"Album Name:" + data.body.tracks.items[2].album.name + ";" +
-             "\n==========================================");
 
-      }, function(err) {
-        console.error(err);
-      });
+    spotifyApi.searchTracks('track:' + songName)
+        .then(function(data) {
+            console.log("Search Results for:  " + songName + "\n")
+            console.log("\n==========================================" +
+                "\n" + "SONG NAME:" + data.body.tracks.items[0].name + ";" +
+                "\n" + "ARTIST:" + data.body.tracks.items[0].artists[0].name + ";" +
+                "\n" + "LINK:" + data.body.tracks.items[0].href + ";" +
+                "\n" + "Album Name:" + data.body.tracks.items[0].album.name + ";" +
+                "\n==========================================");
+            console.log("SONG NAME:" + data.body.tracks.items[1].name + ";" +
+                "\n" + "ARTIST:" + data.body.tracks.items[1].artists[0].name + ";" +
+                "\n" + "LINK:" + data.body.tracks.items[1].href + ";" +
+                "\n" + "Album Name:" + data.body.tracks.items[1].album.name + ";" +
+                "\n==========================================");
+            console.log("SONG NAME:" + data.body.tracks.items[2].name + ";" +
+                "\n" + "ARTIST:" + data.body.tracks.items[2].artists[0].name + ";" +
+                "\n" + "LINK:" + data.body.tracks.items[2].href + ";" +
+                "\n" + "Album Name:" + data.body.tracks.items[2].album.name + ";" +
+                "\n==========================================");
+
+        }, function(err) {
+            console.error(err);
+        });
 }
 
 //data.body.tracks.items. 
 
-function spotifyNoSong(){
+function spotifyNoSong() {
 
     spotifyApi.searchTracks("artist:" + "Ace of Base")
-      .then(function(data) {
-        console.log("\n" +"ARTIST:" + data.body.tracks.items[1].artists[0].name +";"+
-             "\n" +"SONG NAME:" + data.body.tracks.items[1].name +";"+
-             "\n" +"LINK:" + data.body.tracks.items[1].external_urls.spotify +";"+
-             "\n" +"Album Name:" + data.body.tracks.items[1].album.name + ";");
+        .then(function(data) {
+            console.log("\n" + "ARTIST:" + data.body.tracks.items[1].artists[0].name + ";" +
+                "\n" + "SONG NAME:" + data.body.tracks.items[1].name + ";" +
+                "\n" + "LINK:" + data.body.tracks.items[1].external_urls.spotify + ";" +
+                "\n" + "Album Name:" + data.body.tracks.items[1].album.name + ";");
 
-      },function(err) {
-        console.error(err);
-      });
+        }, function(err) {
+            console.error(err);
+        });
 
 }
 
@@ -131,7 +132,6 @@ var mrNobodyMessage = "If you haven't watched 'Mr. Nobody', then you should: " +
 
 // ==========TWEET COMMAND =========
 if (process.argv[2] == "my-tweets") {
-    console.log("twitter API");
     twitterFeed();
 
     // ==========SPOTIFY COMMAND =========
