@@ -40,12 +40,25 @@ function spotifySong(){
         }
     }
     
-    spotifyApi.searchTracks('name: ' + songName)
+    spotifyApi.searchTracks('track:' + songName)
       .then(function(data) {
-        console.log("\n" +"ARTIST:" + data.body.tracks.items[0].artists[0].name +";"+
-             "\n" +"SONG NAME:" + data.body.tracks.items[0].name +";"+
+        console.log("Search Results for:  " + songName + "\n")
+        console.log("\n==========================================" +
+            "\n" +"SONG NAME:" + data.body.tracks.items[0].name +";"+
+            "\n" +"ARTIST:" + data.body.tracks.items[0].artists[0].name +";"+  
              "\n" +"LINK:" + data.body.tracks.items[0].href +";"+
-             "\n" +"Album Name:" + data.body.tracks.items[0].album.name + ";");
+             "\n" +"Album Name:" + data.body.tracks.items[0].album.name + ";"+
+             "\n==========================================");
+        console.log("SONG NAME:" + data.body.tracks.items[1].name +";"+
+            "\n" +"ARTIST:" + data.body.tracks.items[1].artists[0].name +";"+
+             "\n" +"LINK:" + data.body.tracks.items[1].href +";"+
+             "\n" +"Album Name:" + data.body.tracks.items[1].album.name + ";"+
+             "\n==========================================");
+        console.log("SONG NAME:" + data.body.tracks.items[2].name +";"+
+            "\n" +"ARTIST:" + data.body.tracks.items[2].artists[0].name +";"+ 
+             "\n" +"LINK:" + data.body.tracks.items[2].href +";"+
+             "\n" +"Album Name:" + data.body.tracks.items[2].album.name + ";" +
+             "\n==========================================");
 
       }, function(err) {
         console.error(err);
