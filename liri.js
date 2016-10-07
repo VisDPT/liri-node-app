@@ -1,52 +1,60 @@
-
-
-// Include the request npm package (Don't forget to run "npm install request" in this folder first!)
-
+// Include the appropriate npm packages (Don't forget to run "npm install __________" in this folder first!)
 
 //=============================TWITTER API from inquirer===============================================
 //grabs the keys from keys.js
 var Twitter = require('twitter');
 var twitterFile = require('./keys.js');
-var keys =  new Twitter (twitterFile.twitterKeys); 
+var keys = new Twitter(twitterFile.twitterKeys);
 
+var params = {
+    screen_name: 'VisDPT',
+    count: 20,
+    trim_user: 1,
+    contributer_details: true
+};
 
-//var client =  new Twitter ({keys});
- //     consumer_key: keys.consumer_key,
- //     consumer_secret: keys.consumer_secret,
- //     access_token_key: keys.access_token_key,
- //     access_token_secret: keys.access_token_secret,
- // })
-
-
-var params = {screen_name: 'VisDPT',
-            count:20,
-            trim_user: 1,
-            contributer_details: true
-        };
-
-
-function twitterFeed(){
-  keys.get('statuses/user_timeline', params, function(error, tweets) {
-    //for(var i=0; i<20; i++){
-        
-    if (!error) {
-        var results = tweets.data
-       console.log(tweets);
-    } else{
-        console.log(error);
-    }
-    //}
-  });
-   
+function twitterFeed() {
+    keys.get('statuses/user_timeline', params, function(error, tweets) {
+        if (!error) {
+            var results = tweets.data
+            console.log(tweets);
+        } else {
+            console.log(error);
+        }
+    });
 }
-//twitterFeed();
-//====================SPOTIFY API from INQUIRER
-//var SpotifyWebApi = require('spotify-web-api-node');
+
+//====================SPOTIFY API from INQUIRER===============================================
+var SpotifyWebApi = require('spotify-web-api-node');
+var spotifyApi = new SpotifyWebApi();
+var spotifyArgs = process.argv;
+var songName = "";
+
+
+function spotifySong(){
+    for (var i = 3; i < spotifyArgs.length; i++) {
+        if (i > 3 && i < spotifyArgs.length) {
+            songName = songName + "+" + spotifyArgs[i];
+        } else {
+            songName = songName + spotifyArgs[i];
+        }
+    }
+    //var queryUrl = 'http://www.omdbapi.com/?t=' + movieName + '&y=&plot=full&tomatoes=true&r=json';
+    
+
+
+
+spotifyApi.searchTracks(songName)
+  .then(function(data) {
+    console.log('Search by: ' + songName, data.body);
+  }, function(err) {
+    console.error(err);
+  });
+}
 
 
 
 //=============================REQUEST OMDB API ===============================================
-// Then run a request to the OMDB API with the movie specified
 var request = require('request');
 var nodeArgs = process.argv;
 var movieName = "";
@@ -84,10 +92,11 @@ function omdbiRequest() {
 
 var mrNobody = "http://www.imdb.com/title/tt0485947/";
 var mrNobodyMessage = "If you haven't watched 'Mr. Nobody', then you should: " +
-					   mrNobody +
-					   " It's on Netflix!"
+    mrNobody +
+    " It's on Netflix!"
 
 
+//================================= PROCESS =========================================
 
 
 // ==========TWEET COMMAND =========
@@ -98,6 +107,7 @@ if (process.argv[2] == "my-tweets") {
     // ==========SPOTIFY COMMAND =========
 } else if (process.argv[2] == "spotify-this-song") {
     console.log("spotify API");
+    spotifySong();
 
     // ==========OMDB COMMAND =========
 } else if (process.argv[2] == "movie-this") {
