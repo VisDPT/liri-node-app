@@ -39,20 +39,20 @@ function spotifySong(){
             songName = songName + spotifyArgs[i];
         }
     }
-    //var queryUrl = 'http://www.omdbapi.com/?t=' + movieName + '&y=&plot=full&tomatoes=true&r=json';
     
-
-
-
-spotifyApi.searchTracks(songName)
+spotifyApi.searchTracks('name: ' + songName)
   .then(function(data) {
-    console.log('Search by: ' + songName, data.body);
+    console.log("\n" +"ARTIST:" + data.body.tracks.items[0].artists[0].name +";"+
+         "\n" +"SONG NAME:" + data.body.tracks.items[0].name +";"+
+         "\n" +"LINK:" + data.body.tracks.items[0].href +";"+
+         "\n" +"Album Name:" + data.body.tracks.items[0].album.name + ";");
+
   }, function(err) {
     console.error(err);
   });
 }
 
-
+//data.body.tracks.items.  
 
 //=============================REQUEST OMDB API ===============================================
 var request = require('request');
