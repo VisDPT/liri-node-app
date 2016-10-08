@@ -4,7 +4,6 @@
 //grabs the keys from keys.js
 var Twitter = require('twitter');
 var twitterFile = require('./keys.js');
-
 var keys = new Twitter(twitterFile.twitterKeys);
 var params = {
     screen_name: 'VisDPT',
@@ -12,6 +11,9 @@ var params = {
     trim_user: 1,
     contributer_details: true
 };
+
+var nodeArgs = process.argv;
+var twitterCommand = "";
 
 function twitterFeed() {
     keys.get('statuses/user_timeline', params, function(error, tweets) {
@@ -24,9 +26,6 @@ function twitterFeed() {
         }
     });
 }
-var nodeArgs = process.argv;
-var twitterCommand = "";
-
 //====================SPOTIFY API from INQUIRER===============================================
 var SpotifyWebApi = require('spotify-web-api-node');
 var spotifyApi = new SpotifyWebApi();
@@ -135,7 +134,6 @@ var mrNobodyMessage = "\n==========================================" +
 //============================== Do What It says ==================================
 var fs = require('fs');
 
-
 function doWhatItSays_BBB() {
     fs.readFile("random.txt", "utf8", function(error, data) {
         var dataArr = data.split(',');
@@ -144,11 +142,11 @@ function doWhatItSays_BBB() {
         spotifyApi.searchTracks("track:" + song)
             .then(function(data) {
 
-                var dwis = "\n========================================" + 
+                var dwis = "\n========================================" +
                     "\nARTIST:" + data.body.tracks.items[0].artists[0].name + ";" +
                     "\n" + "SONG NAME:" + data.body.tracks.items[0].name + ";" +
                     "\n" + "LINK:" + data.body.tracks.items[0].external_urls.spotify + ";" +
-                    "\n" + "Album Name:" + data.body.tracks.items[0].album.name + ";"+
+                    "\n" + "Album Name:" + data.body.tracks.items[0].album.name + ";" +
                     "\n========================================\n";
                 console.log(dwis);
                 fs.appendFile("./log.txt", "\n" + dwis);
@@ -179,14 +177,12 @@ function append() {
         }
     });
 }
-
 //================================= PROCESS =========================================
 // ==========TWEET COMMAND =========
 if (process.argv[2] == "my-tweets") {
     twitterFeed();
     append();
-
-    // ==========SPOTIFY COMMAND =========
+// ==========SPOTIFY COMMAND =========
 } else if (process.argv[2] == "spotify-this-song") {
     if (process.argv[3] == null) {
         spotifyNoSong();
@@ -195,8 +191,7 @@ if (process.argv[2] == "my-tweets") {
         spotifySong();
         append();
     }
-
-    // ==========OMDB COMMAND =========
+// ==========OMDB COMMAND =========
 } else if (process.argv[2] == "movie-this") {
     if (process.argv[3] == null) {
         console.log(mrNobodyMessage);
@@ -206,7 +201,7 @@ if (process.argv[2] == "my-tweets") {
         omdbiRequest();
         append();
     }
-    // ==========Do what it Says COMMAND =========
+// ==========Do what it Says COMMAND =========
 } else if (process.argv[2] == "do-what-it-says") {
     doWhatItSays_BBB();
     append();
