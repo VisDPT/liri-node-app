@@ -45,6 +45,7 @@ function spotifySong() {
             console.log("\n===========================================" +
                 "\nSearch Results:" +
                 "\n-------------------------------------------");
+
             var spotifyResults =
                 "\n" + "SONG NAME:" + data.body.tracks.items[0].name + ";" +
                 "\n" + "ARTIST:" + data.body.tracks.items[0].artists[0].name + ";" +
@@ -116,6 +117,7 @@ function omdbiRequest() {
                 "\nCountry of Production: " + JSON.parse(body)["Country"] +
                 "\nLanguage: " + JSON.parse(body)["Language"] + "\n" +
                 "\nPlot: " + JSON.parse(body)["Plot"] +
+                "\n"+
                 "\nActors: " + JSON.parse(body)["Actors"] + "\n" +
                 "\nRotten Tomatoes Rating: " + JSON.parse(body)["tomatoRating"] +
                 "\nRotten Tomatoes URL: " + JSON.parse(body)["tomatoURL"] +

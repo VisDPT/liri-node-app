@@ -340,3 +340,88 @@ LINK:https://open.spotify.com/track/78aRJmHDND5d79PPztfe0Y;
 Album Name:Very Superior;
 
 ===========================================
+ ==================================
+ node liri.js  spotify-this-song
+
+
+==========================================
+ARTIST:Ace of Base;
+SONG NAME:The Sign;
+LINK:https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE;
+Album Name:The Sign (US Album) [Remastered];
+==========================================
+ ==================================
+ node liri.js  spotify-this-song one night in bangkok
+
+
+SONG NAME:One Night In Bangkok - Single Version;
+ARTIST:Björn Ulvaeus;
+LINK:https://open.spotify.com/track/23vGFULTo0MgSlzEs4Fhm2;
+Album Name:Broadway's Greatest Leading Men;
+
+SONG NAME:One Night in Bangkok;
+ARTIST:Murray Head;
+LINK:https://open.spotify.com/track/3pQNcwnGQycAACpwu7IY3G;
+Album Name:Retro Disco Cocktail (Party Album);
+
+SONG NAME:One Night In Bangkok (Vinylshakerz Screen Cut);
+ARTIST:Vinylshakerz;
+LINK:https://open.spotify.com/track/78aRJmHDND5d79PPztfe0Y;
+Album Name:Very Superior;
+
+===========================================
+ ==================================
+ node liri.js  movie-this cocktail
+
+
+Movie Title: Cocktail
+
+Year Came Out: 1988
+IMBDB rating: 5.8
+Country of Production: USA
+Language: English, Spanish Sign Language
+
+Plot: After leaving the Army, Brian Flanagan tries to get a marketing job in New York City. But without a college degree, this was not possible. He then decides to start studying for a business degree at the local City College and gets a part time job as a bartender. He realizes that its not that easy, but his new boss Douglas Coughlin teaches him the secrets of the bar trade and they become the most famous bartenders in town. Both Brian and Doug Coughlin want their own top class cocktail bars someday and Brian's Cocktail Bar is to be called 'Cocktails & Dreams'. Inorder to get the necessary money to open it, Brian travels to Jamaica to work as a bartender at a resort Tiki Bar, and the pay is good. There he meets Jordan Mooney, a young and pretty, up and coming American artist on vacation with her girlfriend from New York City, staying at the Island resort. Jordan and Brian spend some quality time together and fall in love. But Brian takes a dare from his old buddy, Doug Coughlin to sleep with an older woman, who is also staying at the resort. Jordan, herself the daughter of wealthy parents back in New York City, leaves the Island overnight, after seeing Brian and the older woman together after closing... Will Jordan ever forgive Brian and will they get back together?
+Actors: Tom Cruise, Bryan Brown, Elisabeth Shue, Lisa Banes
+
+Rotten Tomatoes Rating: 3.9
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/1004420-cocktail/
+==========================================
+ ==================================
+ node liri.js  movie-this
+
+
+==========================================
+If you haven't watched 'Mr. Nobody', then you should: 
+http://www.imdb.com/title/tt0485947/
+It's on Netflix!
+==========================================
+ ==================================
+ node liri.js  do-what-it-says
+
+
+========================================
+ARTIST:Backstreet Boys;
+SONG NAME:I Want It That Way;
+LINK:https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6;
+Album Name:The Hits--Chapter One;
+========================================
+
+ ==================================
+ node liri.js  movie-this air force one
+
+
+Movie Title: Air Force One
+
+Year Came Out: 1997
+IMBDB rating: 6.4
+Country of Production: USA, Germany
+Language: English, Russian
+
+Plot: The President of the USA goes to Moscow and gives a stirring speech outlining the USA's new "Zero-tolerance" policy with respect to terrorism. On the flight home, terrorists take over Air Force One (the President's official plane) and take the passengers (including his wife and daughter) hostage. The terrorists plan to execute one hostage every half-hour unless/until their demands are met. However, the President is a former Medal of Honor winner, so the terrorists may be in for a surprise...
+
+Actors: Harrison Ford, Gary Oldman, Glenn Close, Wendy Crewson
+
+Rotten Tomatoes Rating: 7.0
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/air_force_one/
+==========================================
