@@ -276,3 +276,67 @@ SONG NAME:I Want It That Way;
 LINK:https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6;
 Album Name:The Hits--Chapter One;
 ========================================
+
+ ==================================
+ node liri.js  my-tweets
+
+Tweet: "This is so much fun! Coding/Web Development Addiction!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Can't stop Coding!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Kicking butt on this HW!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Love Coding &lt;3 &lt;3!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Yay! go it working!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "20! YAY!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "19"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "18"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "17"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "16"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "15"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "14"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "13"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "12"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "11"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "10"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "9"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "8"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "7"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "6"          Fri Oct 07 19:32:12 +0000 2016
+ ==================================
+ node liri.js  spotify-this-song one night in bangkok
+
+
+SONG NAME:One Night In Bangkok - Single Version;
+ARTIST:Björn Ulvaeus;
+LINK:https://api.spotify.com/v1/tracks/23vGFULTo0MgSlzEs4Fhm2;
+Album Name:Broadway's Greatest Leading Men;
+
+SONG NAME:One Night in Bangkok;
+ARTIST:Murray Head;
+LINK:https://api.spotify.com/v1/tracks/3pQNcwnGQycAACpwu7IY3G;
+Album Name:Retro Disco Cocktail (Party Album);
+
+SONG NAME:One Night In Bangkok (Vinylshakerz Screen Cut);
+ARTIST:Vinylshakerz;
+LINK:https://api.spotify.com/v1/tracks/78aRJmHDND5d79PPztfe0Y;
+Album Name:Very Superior;
+
+===========================================
+ ==================================
+ node liri.js  spotify-this-song one night in bangkok
+
+
+SONG NAME:One Night In Bangkok - Single Version;
+ARTIST:Björn Ulvaeus;
+LINK:https://open.spotify.com/track/23vGFULTo0MgSlzEs4Fhm2;
+Album Name:Broadway's Greatest Leading Men;
+
+SONG NAME:One Night in Bangkok;
+ARTIST:Murray Head;
+LINK:https://open.spotify.com/track/3pQNcwnGQycAACpwu7IY3G;
+Album Name:Retro Disco Cocktail (Party Album);
+
+SONG NAME:One Night In Bangkok (Vinylshakerz Screen Cut);
+ARTIST:Vinylshakerz;
+LINK:https://open.spotify.com/track/78aRJmHDND5d79PPztfe0Y;
+Album Name:Very Superior;
+
+===========================================
