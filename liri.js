@@ -17,11 +17,10 @@ function twitterFeed() {
     keys.get('statuses/user_timeline', params, function(error, tweets) {
         if (!error) {
             for (var i = 0; i < 20; i++) {
-
-                console.log('Tweet: ' + '"' + tweets[i].text + '"          ' + tweets[0].created_at);
+                var tweetMessage = 'Tweet: ' + '"' + tweets[i].text + '"          ' + tweets[0].created_at;
+                console.log(tweetMessage);
+                fs.appendFile("./log.txt", "\n" + tweetMessage);
             }
-        } else {
-            console.log(error);
         }
     });
 }
@@ -47,23 +46,25 @@ function spotifySong() {
             console.log("\n===========================================" +
                 "\nSearch Results:" +
                 "\n-------------------------------------------");
-            console.log(
+            var spotifyResults =
                 "\n" + "SONG NAME:" + data.body.tracks.items[0].name + ";" +
                 "\n" + "ARTIST:" + data.body.tracks.items[0].artists[0].name + ";" +
                 "\n" + "LINK:" + data.body.tracks.items[0].href + ";" +
                 "\n" + "Album Name:" + data.body.tracks.items[0].album.name + ";" +
-                "\n" + "\n");
-            console.log("SONG NAME:" + data.body.tracks.items[1].name + ";" +
+                "\n" + "\n" +
+                "SONG NAME:" + data.body.tracks.items[1].name + ";" +
                 "\n" + "ARTIST:" + data.body.tracks.items[1].artists[0].name + ";" +
                 "\n" + "LINK:" + data.body.tracks.items[1].href + ";" +
                 "\n" + "Album Name:" + data.body.tracks.items[1].album.name + ";" +
-                "\n" + "\n");
-            console.log("SONG NAME:" + data.body.tracks.items[2].name + ";" +
+                "\n" + "\n" +
+                "SONG NAME:" + data.body.tracks.items[2].name + ";" +
                 "\n" + "ARTIST:" + data.body.tracks.items[2].artists[0].name + ";" +
                 "\n" + "LINK:" + data.body.tracks.items[2].href + ";" +
                 "\n" + "Album Name:" + data.body.tracks.items[2].album.name + ";" +
                 "\n" +
-                "\n===========================================");
+                "\n===========================================";
+            console.log(spotifyResults);
+            fs.appendFile("./log.txt", "\n" + spotifyResults);
 
         }, function(err) {
             console.error(err);
@@ -74,12 +75,14 @@ function spotifySong() {
 function spotifyNoSong() {
     spotifyApi.searchTracks("artist:" + "Ace of Base")
         .then(function(data) {
-            console.log("\n==========================================" +
+            var noSong = "\n==========================================" +
                 "\n" + "ARTIST:" + data.body.tracks.items[1].artists[0].name + ";" +
                 "\n" + "SONG NAME:" + data.body.tracks.items[1].name + ";" +
                 "\n" + "LINK:" + data.body.tracks.items[1].external_urls.spotify + ";" +
                 "\n" + "Album Name:" + data.body.tracks.items[1].album.name + ";" +
-                "\n==========================================");
+                "\n==========================================";
+            console.log(noSong);
+            fs.appendFile("./log.txt", "\n" + noSong);
 
         }, function(err) {
             console.error(err);
@@ -99,16 +102,15 @@ function omdbiRequest() {
         }
     }
     var queryUrl = 'http://www.omdbapi.com/?t=' + movieName + '&y=&plot=full&tomatoes=true&r=json';
-    
+
     request(queryUrl, function(error, response, body) {
         // If the request is successful (i.e. if the response status code is 200)
         if (!error && response.statusCode == 200) {
             console.log("\n===========================================" +
                 "\nSearch Results:" +
                 "\n-------------------------------------------");
-            console.log(
-//                "\n==========================================" +
-                "\nMovie Title: " + JSON.parse(body)["Title"] +
+
+            var movieResults = "\nMovie Title: " + JSON.parse(body)["Title"] +
                 "\n" +
                 "\nYear Came Out: " + JSON.parse(body)["Year"] +
                 "\nIMBDB rating: " + JSON.parse(body)["imdbRating"] +
@@ -118,8 +120,9 @@ function omdbiRequest() {
                 "\nActors: " + JSON.parse(body)["Actors"] + "\n" +
                 "\nRotten Tomatoes Rating: " + JSON.parse(body)["tomatoRating"] +
                 "\nRotten Tomatoes URL: " + JSON.parse(body)["tomatoURL"] +
-                "\n=========================================="
-            )
+                "\n==========================================";
+            console.log(movieResults);
+            fs.appendFile("./log.txt", "\n" + movieResults);
         }
     });
 }
@@ -140,10 +143,15 @@ function doWhatItSays_BBB() {
         var song = dataArr[1];
         spotifyApi.searchTracks("track:" + song)
             .then(function(data) {
-                console.log("\n" + "ARTIST:" + data.body.tracks.items[0].artists[0].name + ";" +
+
+                var dwis = "\n========================================" + 
+                    "\nARTIST:" + data.body.tracks.items[0].artists[0].name + ";" +
                     "\n" + "SONG NAME:" + data.body.tracks.items[0].name + ";" +
                     "\n" + "LINK:" + data.body.tracks.items[0].external_urls.spotify + ";" +
-                    "\n" + "Album Name:" + data.body.tracks.items[0].album.name + ";");
+                    "\n" + "Album Name:" + data.body.tracks.items[0].album.name + ";"+
+                    "\n========================================\n";
+                console.log(dwis);
+                fs.appendFile("./log.txt", "\n" + dwis);
             }, function(err) {
                 console.error(err);
             });
@@ -161,13 +169,13 @@ function append() {
             command = command + " " + nodeArgs[i];
         }
     }
-    var printCommand = "\n node " + "liri.js " + command
-    fs.appendFile("./log.txt", printCommand, function(err) {
+    var printCommand = "\n ==================================" + "\n node " + "liri.js " + command
+    fs.appendFile("./log.txt", printCommand + "\n", function(err) {
         if (err) {
             console.log(err);
             console.log("Command NOT logged");
         } else {
-            console.log("Command logged!");
+            console.log("Command & results logged!");
         }
     });
 }
@@ -193,6 +201,7 @@ if (process.argv[2] == "my-tweets") {
     if (process.argv[3] == null) {
         console.log(mrNobodyMessage);
         append();
+        fs.appendFile("./log.txt", "\n" + mrNobodyMessage);
     } else {
         omdbiRequest();
         append();

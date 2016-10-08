@@ -21,3 +21,258 @@
  node liri.js  do-what-it-says
  node liri.js  spotify-this-song streets have no name
  node liri.js  my-tweets
+ node liri.js  my-tweets
+ node liri.js  my-tweets
+ node liri.js  my-tweets
+ Tweet: "This is so much fun! Coding/Web Development Addiction!"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "Can't stop Coding!"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "Kicking butt on this HW!"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "Love Coding &lt;3 &lt;3!"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "Yay! go it working!"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "20! YAY!"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "19"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "18"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "17"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "16"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "15"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "14"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "13"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "12"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "11"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "10"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "9"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "8"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "7"          Fri Oct 07 19:32:12 +0000 2016
+ Tweet: "6"          Fri Oct 07 19:32:12 +0000 2016
+ node liri.js  my-tweetsTweet: "This is so much fun! Coding/Web Development Addiction!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Can't stop Coding!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Kicking butt on this HW!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Love Coding &lt;3 &lt;3!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Yay! go it working!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "20! YAY!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "19"          Fri Oct 07 19:32:12 +0000 2016Tweet: "18"          Fri Oct 07 19:32:12 +0000 2016Tweet: "17"          Fri Oct 07 19:32:12 +0000 2016Tweet: "16"          Fri Oct 07 19:32:12 +0000 2016Tweet: "15"          Fri Oct 07 19:32:12 +0000 2016Tweet: "14"          Fri Oct 07 19:32:12 +0000 2016Tweet: "13"          Fri Oct 07 19:32:12 +0000 2016Tweet: "12"          Fri Oct 07 19:32:12 +0000 2016Tweet: "11"          Fri Oct 07 19:32:12 +0000 2016Tweet: "10"          Fri Oct 07 19:32:12 +0000 2016Tweet: "9"          Fri Oct 07 19:32:12 +0000 2016Tweet: "8"          Fri Oct 07 19:32:12 +0000 2016Tweet: "7"          Fri Oct 07 19:32:12 +0000 2016Tweet: "6"          Fri Oct 07 19:32:12 +0000 2016
+ node liri.js  my-tweetsTweet: "This is so much fun! Coding/Web Development Addiction!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Can't stop Coding!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Kicking butt on this HW!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Love Coding &lt;3 &lt;3!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "Yay! go it working!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "20! YAY!"          Fri Oct 07 19:32:12 +0000 2016Tweet: "19"          Fri Oct 07 19:32:12 +0000 2016Tweet: "18"          Fri Oct 07 19:32:12 +0000 2016Tweet: "17"          Fri Oct 07 19:32:12 +0000 2016Tweet: "16"          Fri Oct 07 19:32:12 +0000 2016Tweet: "15"          Fri Oct 07 19:32:12 +0000 2016Tweet: "14"          Fri Oct 07 19:32:12 +0000 2016Tweet: "13"          Fri Oct 07 19:32:12 +0000 2016Tweet: "12"          Fri Oct 07 19:32:12 +0000 2016Tweet: "11"          Fri Oct 07 19:32:12 +0000 2016Tweet: "10"          Fri Oct 07 19:32:12 +0000 2016Tweet: "9"          Fri Oct 07 19:32:12 +0000 2016Tweet: "8"          Fri Oct 07 19:32:12 +0000 2016Tweet: "7"          Fri Oct 07 19:32:12 +0000 2016Tweet: "6"          Fri Oct 07 19:32:12 +0000 2016
+
+
+ ==================================
+ node liri.js  my-tweets
+
+Tweet: "This is so much fun! Coding/Web Development Addiction!"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "Can't stop Coding!"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "Kicking butt on this HW!"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "Love Coding &lt;3 &lt;3!"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "Yay! go it working!"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "20! YAY!"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "19"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "18"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "17"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "16"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "15"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "14"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "13"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "12"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "11"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "10"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "9"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "8"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "7"          Fri Oct 07 19:32:12 +0000 2016
+
+Tweet: "6"          Fri Oct 07 19:32:12 +0000 2016
+
+ ==================================
+ node liri.js  my-tweets
+
+Tweet: "This is so much fun! Coding/Web Development Addiction!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Can't stop Coding!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Kicking butt on this HW!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Love Coding &lt;3 &lt;3!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Yay! go it working!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "20! YAY!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "19"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "18"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "17"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "16"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "15"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "14"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "13"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "12"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "11"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "10"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "9"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "8"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "7"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "6"          Fri Oct 07 19:32:12 +0000 2016
+ ==================================
+ node liri.js  spotify-this-song streets have no name
+
+ ==================================
+ node liri.js  spotify-this-song streets have no name
+
+
+SONG NAME:Where The Streets Have No Name;
+ARTIST:U2;
+LINK:https://api.spotify.com/v1/tracks/3zqTlJtp7KTPrNUKNahvAo;
+Album Name:The Joshua Tree;
+
+SONG NAME:Where The Streets Have No Name - Unplugged;
+ARTIST:Thirty Seconds To Mars;
+LINK:https://api.spotify.com/v1/tracks/2Gy3tEwecEcO45QDNtiAti;
+Album Name:Thirty Seconds To Mars Unplugged;
+
+SONG NAME:Where The Streets Have No Name;
+ARTIST:2Cellos;
+LINK:https://api.spotify.com/v1/tracks/1qlYBDwPvgKOtnMjCCDrvs;
+Album Name:2CELLOS;
+
+===========================================
+ ==================================
+ node liri.js  spotify-this-song streets have no name
+
+
+SONG NAME:Where The Streets Have No Name;
+ARTIST:U2;
+LINK:https://api.spotify.com/v1/tracks/3zqTlJtp7KTPrNUKNahvAo;
+Album Name:The Joshua Tree;
+
+SONG NAME:Where The Streets Have No Name - Unplugged;
+ARTIST:Thirty Seconds To Mars;
+LINK:https://api.spotify.com/v1/tracks/2Gy3tEwecEcO45QDNtiAti;
+Album Name:Thirty Seconds To Mars Unplugged;
+
+SONG NAME:Where The Streets Have No Name;
+ARTIST:2Cellos;
+LINK:https://api.spotify.com/v1/tracks/1qlYBDwPvgKOtnMjCCDrvs;
+Album Name:2CELLOS;
+
+===========================================
+ ==================================
+ node liri.js  spotify-this-song
+
+
+==========================================
+ARTIST:Ace of Base;
+SONG NAME:The Sign;
+LINK:https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE;
+Album Name:The Sign (US Album) [Remastered];
+==========================================
+ ==================================
+ node liri.js  movie-this
+
+
+
+
+
+
+
+TESTING!
+
+ ==================================
+ node liri.js  my-tweets
+
+Tweet: "This is so much fun! Coding/Web Development Addiction!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Can't stop Coding!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Kicking butt on this HW!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Love Coding &lt;3 &lt;3!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "Yay! go it working!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "20! YAY!"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "19"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "18"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "17"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "16"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "15"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "14"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "13"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "12"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "11"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "10"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "9"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "8"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "7"          Fri Oct 07 19:32:12 +0000 2016
+Tweet: "6"          Fri Oct 07 19:32:12 +0000 2016
+ ==================================
+ node liri.js  spotify-this-song starboy
+
+
+SONG NAME:Starboy;
+ARTIST:The Weeknd;
+LINK:https://api.spotify.com/v1/tracks/2IY7eOUDjw2ArKYxKa2jXc;
+Album Name:Starboy;
+
+SONG NAME:Starboy;
+ARTIST:The Weeknd;
+LINK:https://api.spotify.com/v1/tracks/7zUEAYmAy98AZ1See3m8l8;
+Album Name:Starboy;
+
+SONG NAME:Starboy (Instrumental);
+ARTIST:KPH;
+LINK:https://api.spotify.com/v1/tracks/7HqPDKiAgBwEzvej4RBeHS;
+Album Name:Starboy (Instrumental);
+
+===========================================
+ ==================================
+ node liri.js  spotify-this-song
+
+
+==========================================
+ARTIST:Ace of Base;
+SONG NAME:The Sign;
+LINK:https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE;
+Album Name:The Sign (US Album) [Remastered];
+==========================================
+ ==================================
+ node liri.js  movie-this lion king
+
+
+Movie Title: The Lion King
+
+Year Came Out: 1994
+IMBDB rating: 8.5
+Country of Production: USA
+Language: English, Swahili, Xhosa, Zulu
+
+Plot: A young lion Prince is cast out of his pride by his cruel uncle, who claims he killed his father. While the uncle rules with an iron paw, the prince grows up beyond the Savannah, living by a philosophy: No worries for the rest of your days. But when his past comes to haunt him, the young Prince must decide his fate: will he remain an outcast, or face his demons and become what he needs to be?
+Actors: Matthew Broderick, Jonathan Taylor Thomas, James Earl Jones, Jim Cummings
+
+Rotten Tomatoes Rating: 8.3
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/the_lion_king/
+==========================================
+ ==================================
+ node liri.js  movie-this
+
+
+==========================================
+If you haven't watched 'Mr. Nobody', then you should: 
+http://www.imdb.com/title/tt0485947/
+It's on Netflix!
+==========================================
+
+ node liri.js  do-what-it-says
+
+
+========================================
+ARTIST:Backstreet Boys;
+SONG NAME:I Want It That Way;
+LINK:https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6;
+Album Name:The Hits--Chapter One;
+ ==================================
+ node liri.js  do-what-it-says
+
+
+========================================
+ARTIST:Backstreet Boys;
+SONG NAME:I Want It That Way;
+LINK:https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6;
+Album Name:The Hits--Chapter One;
+========================================
