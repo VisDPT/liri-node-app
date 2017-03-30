@@ -1,5 +1,5 @@
 # liri-node-app
-LIRI Bot (Language Interpretation and Recognition Interface) - BACK END ONLYs 
+LIRI Bot (Language Interpretation and Recognition Interface) - BACK END ONLY
 
 You can fork the repo and run it on the commandline/terminal using the instructions below! Enjoy! :)
 
